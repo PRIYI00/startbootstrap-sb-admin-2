@@ -42,23 +42,21 @@
               <form class="user">
                 <div class="form-group row">
                   <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="exampleCover" placeholder="Cover">
+                    <input type="text" class="form-control form-control-user" id="exampleCover" placeholder="Cover" pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)(.jpg|.jpeg|.png|.gif)" required>
                   </div>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control form-control-user" id="exampleTituloDisco" placeholder="Titulo Disco">
+                    <input type="text" class="form-control form-control-user" id="exampleTituloDisco" placeholder="Titulo Disco" pattern="[A-Z a-z 0-9]{1,100}" required>
                   </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control form-control-user" id="exampleGrupo" placeholder="Grupo">
+                        <input type="text" class="form-control form-control-user" id="exampleGrupo" placeholder="Grupo" pattern="[A-Z a-z 0-9]{1,100}" required>
                     </div>
                     <div class="col-sm-6">
                         <input type="date" class="form-control form-control-user" id="exampleDateDisco" name="bday" min="1900-12-31">
                     </div>
                 </div>
-                <a href="index.html" class="btn btn-primary btn-user btn-block">
-                  Añadir Nuevo Disco
-                </a>
+                <button type="submit" class="btn btn-primary btn-user btn-block"> Añadir Nuevo Disco </button>
               </form>
             </div>
           </div>
